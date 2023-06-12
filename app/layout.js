@@ -7,6 +7,7 @@ import NavBar from "@/components/navbar/NavBar";
 import AOSAnimation from "@/utils/AosInit";
 
 import localFont from "next/font/local";
+import Footer from "@/components/footer/Footer";
 
 const sora = localFont({
   src: [
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
       <body className={sora.className}>
         <NavBar />
         <AOSAnimation>{children}</AOSAnimation>
+        <Footer />
       </body>
     </html>
   );

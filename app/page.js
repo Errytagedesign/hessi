@@ -9,6 +9,7 @@ import networking from "../public/assets/images/network.svg";
 import review from "../public/assets/images/review.png";
 import { FaCheckCircle } from "react-icons/fa";
 import Reviews from "@/components/reviews/Reviews";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -169,6 +170,26 @@ export default function Home() {
           </div>
 
           <Reviews styles={styles} />
+        </article>
+      </section>
+
+      {/* Get started Section */}
+      <section
+        className={`${styles.getStarted} d-flex flex-column flex-lg-row justify-content-between align-items-center`}
+      >
+        <h3 className="col-12 col-lg-6">
+          {" "}
+          Are you ready to start your course now?
+        </h3>
+        <article className="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-between">
+          <Link className={`col-12 col-lg-6 ${styles.start}`} href="#">
+            {" "}
+            Get Started Now!
+          </Link>
+          <Link className={` col-12 col-lg-5 ${styles.contact}`} href="#">
+            {" "}
+            Contact us
+          </Link>
         </article>
       </section>
     </main>
