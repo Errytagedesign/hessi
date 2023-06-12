@@ -2,6 +2,7 @@
   --max-width: 1500px;
   --mainColor: #014dd5;
   --secColor: #1d99de;
+  --accentColor: #1d99de0d;
   --black: #1e1e1e;
   --white: #fff;
   --fontSuperBig: 4rem;
@@ -58,6 +59,7 @@ h2 {
 h3 {
   font-size: var(--fontBig);
   font-weight: 600;
+  color: var(--mainColor);
 }
 
 h5 {
