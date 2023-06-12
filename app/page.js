@@ -6,12 +6,14 @@ import register from "../public/assets/images/register.svg";
 import complete from "../public/assets/images/complete.svg";
 import success from "../public/assets/images/success.svg";
 import networking from "../public/assets/images/network.svg";
+import review from "../public/assets/images/review.png";
 import { FaCheckCircle } from "react-icons/fa";
+import Reviews from "@/components/reviews/Reviews";
 
 export default function Home() {
   return (
     <main
-      className={`${styles.main} d-flex flex-column align-items-center justify-content-center `}
+      className={`${styles.main} d-flex flex-column justify-content-center `}
     >
       {/* Hero section */}
       <section className={styles.hero}>
@@ -39,6 +41,7 @@ export default function Home() {
         >
           <Image src={whyLearn} alt=" Hessi's Hompage image" />{" "}
         </figure>
+
         <article
           className={`${styles.whyLearnTitle} d-flex flex-column justify-content-between col-12 col-lg-6`}
         >
@@ -148,6 +151,25 @@ export default function Home() {
         <div className="mt-5">
           <Buttons className="main-btn" text="Resgister Now" />
         </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section
+        className={`${styles.reviewContainer} d-flex flex-column flex-lg-row justify-content-between`}
+      >
+        <figure className={` col-12 col-lg-5 order-1 order-lg-0`}>
+          <Image src={review} alt=" Hessi's Hompage image" />{" "}
+        </figure>
+        <article className={` d-flex flex-column col-lg-6`}>
+          <div>
+            <h3 className="mb-3">
+              {" "}
+              What our students are saying about our courses{" "}
+            </h3>
+          </div>
+
+          <Reviews styles={styles} />
+        </article>
       </section>
     </main>
   );
