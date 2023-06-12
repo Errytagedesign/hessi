@@ -45,13 +45,12 @@ export default function Home() {
           <h3 data-aos="fade-down-left">Why learn from HESSI</h3>
           <p data-aos="fade-left">
             We believe that everyone has the potential to achieve their career
-            goals, no matter what industry they're in. That's why we offer
-            personalized coaching services to help professionals across
-            healthcare and other fields reach their full potential. <br />{" "}
-            <br />
-            Our experienced career coaches understand the unique challenges that
-            professionals face in today's competitive job market. That's why we
-            offer tailored coaching services to help you identify your
+            goals, no matter what industry they&aposre in. That&aposs why we
+            offer personalized coaching services to help professionals across
+            healthcare and other fields reach their full potential. Our
+            experienced career coaches understand the unique challenges that
+            professionals face in today&aposs competitive job market. That&aposs
+            why we offer tailored coaching services to help you identify your
             strengths, overcome your weaknesses, and achieve your career goals.
           </p>
           <hgroup
