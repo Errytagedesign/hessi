@@ -1,7 +1,7 @@
 .main {
-  // h3 {
-  //   font-weight: 600;
-  // }
+  h3 {
+    font-weight: 600;
+  }
 
   .hero {
     width: 100vw;
@@ -15,7 +15,7 @@
       text-align: center;
       h1 {
         font-size: clamp(var(--fontBig), 10vw, var(--fontSuperBig));
-        // font-weight: 800;
+        font-weight: 800;
       }
     }
 
