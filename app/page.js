@@ -10,7 +10,7 @@ import review from "../public/assets/images/review.png";
 import { FaCheckCircle } from "react-icons/fa";
 import Reviews from "@/components/reviews/Reviews";
 import Link from "next/link";
-// import "./globals.css";
+import "./globals.css";
 
 export default function Home() {
   return (
