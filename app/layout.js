@@ -3,15 +3,54 @@ import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import "aos/dist/aos.css";
-import { Sora } from "next/font/google";
 import NavBar from "@/components/navbar/NavBar";
 import AOSAnimation from "@/utils/AosInit";
 
-const sora = Sora({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "700"],
-  // preload: false,
+import localFont from "next/font/local";
+
+const sora = localFont({
+  src: [
+    {
+      path: "./Fonts/static/Sora-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./Fonts/static/Sora-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./Fonts/static/Sora-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./Fonts/static/Sora-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./Fonts/static/Sora-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./Fonts/static/Sora-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./Fonts/static/Sora-ExtraLight.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "./Fonts/static/Sora-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata = {
