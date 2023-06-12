@@ -1,6 +1,6 @@
-import "./globals.css";
 import NavBar from "@/components/navbar/NavBar";
 import AOSAnimation from "@/utils/AosInit";
+import "./globals.css";
 
 import localFont from "next/font/local";
 import Footer from "@/components/footer/Footer";
