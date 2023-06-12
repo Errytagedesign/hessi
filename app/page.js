@@ -83,10 +83,10 @@ export default function Home() {
 
       {/* How it works section */}
       <section
-        className={`${styles.howItWorks} d-flex flex-column justify-content-between`}
+        className={`${styles.howItWorks} d-flex flex-column justify-content-between align-items-center`}
       >
         <div>
-          <h3> How it works</h3>
+          <h3 className="mb-3"> How it works</h3>
           <p>
             {" "}
             With these few simple steps, you’re closer to being a certified
@@ -94,10 +94,12 @@ export default function Home() {
           </p>
         </div>
 
-        <article className="col-12 col-lg-8 d-flex flex-column flex-lg-row mx-auto justify-content-between gap-4">
+        <article
+          className={`${styles.cardsContainer} col-12 col-lg-10 d-flex flex-column flex-lg-row justify-content-center `}
+        >
           <article
             data-aos="zoom-in"
-            className={`${styles.Cards} d-flex flex-column justify-content-between col-12 col-lg-4`}
+            className={`${styles.Cards} d-flex flex-column justify-content-between col-12 col-lg-3`}
           >
             <figure>
               <Image src={register} alt="hessi's how it works icons" />
@@ -109,7 +111,7 @@ export default function Home() {
           </article>
           <article
             data-aos="zoom-in"
-            className={`${styles.Cards} d-flex flex-column justify-content-between col-12 col-lg-4`}
+            className={`${styles.Cards} d-flex flex-column justify-content-between col-12 col-lg-3`}
           >
             <figure>
               <Image src={complete} alt="hessi's how it works icons" />
@@ -121,7 +123,7 @@ export default function Home() {
           </article>
           <article
             data-aos="zoom-in"
-            className={`${styles.Cards} d-flex flex-column justify-content-between col-12 col-lg-4`}
+            className={`${styles.Cards} d-flex flex-column justify-content-between col-12 col-lg-3`}
           >
             <figure>
               <Image src={networking} alt="hessi's how it works icons" />
@@ -133,7 +135,7 @@ export default function Home() {
           </article>
           <article
             data-aos="zoom-in"
-            className={`${styles.Cards} d-flex flex-column justify-content-between col-12 col-lg-4`}
+            className={`${styles.Cards} d-flex flex-column justify-content-between col-12 col-lg-3`}
           >
             <figure>
               <Image src={success} alt="hessi's how it works icons" />

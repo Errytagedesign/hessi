@@ -66,27 +66,41 @@
     background: var(--accentColor);
     padding: 5em 2em;
     text-align: center;
-    .Cards {
-      background: linear-gradient(var(--secColor) 0 0) no-repeat;
-      background-size: 0 100%;
-      box-shadow: 5px 8px 22px 0px #00000040;
-      padding: 1.5em 2em;
-      border-radius: 20px;
-      img {
-        width: 30%;
-      }
 
-      &:hover {
+    .cardsContainer {
+      margin: 2em auto;
+      .Cards {
         background: linear-gradient(var(--secColor) 0 0) no-repeat;
-        background-size: 100% 100%;
-        color: var(--white);
-        transition: 0.4s;
-        animation: hoverBg 0.4s ease-in-out;
-
+        background-size: 0 100%;
+        box-shadow: 5px 8px 22px 0px #00000040;
+        padding: 1.5em 2em;
+        border-radius: 20px;
+        margin: 1em auto;
         img {
-          background: var(--white);
-          padding: 0.5em;
-          border-radius: 50%;
+          width: 30%;
+          transition: 0.4s all ease-in-out;
+        }
+
+        &:hover {
+          background: linear-gradient(var(--secColor) 0 0) no-repeat;
+          background-size: 100% 100%;
+          color: var(--white);
+          transition: 0.4s all ease-in-out;
+          animation: hoverBg 0.4s ease-in-out;
+
+          img {
+            background: var(--white);
+            padding: 0.5em;
+            border-radius: 50%;
+            transition: 0.4s all ease-in-out;
+          }
+        }
+
+        @media screen and (min-width: 900px) {
+          margin-right: 1em;
+          &:nth-child(4) {
+            margin-right: 0;
+          }
         }
       }
     }
