@@ -22,6 +22,9 @@
     }
 
     @media screen and (min-width: 900px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       padding: 5em 2em;
       background: url("../public/assets/images/heroBg.png") center center
         no-repeat;

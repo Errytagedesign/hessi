@@ -120,16 +120,26 @@ img {
 .slick-prev::before,
 .slick-next::before {
   z-index: 1000;
-  color: var(--mainColor);
+  color: var(--white);
 }
 
 .slick-prev {
   left: 70%;
   top: 120%;
+  background: var(--mainColor);
+  border-radius: 50%;
 }
 .slick-next {
   right: 20px;
   top: 120%;
+  background: var(--mainColor);
+  border-radius: 50%;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  color: var(--white);
+  background: var(--mainColor);
 }
 
 @media screen and (min-width: 900px) {
