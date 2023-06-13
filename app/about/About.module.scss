@@ -6,18 +6,24 @@
   }
 
   .aboutHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    height: 100vh;
-    background: url("../public/assets/images/heroBgMobile.png") center center
-      no-repeat;
+    height: 50vh;
+    background: var(--mainColor) url("../../public//assets/images/about.webp")
+      center center no-repeat;
     background-size: cover;
+    background-blend-mode: overlay;
     padding: 2em 1.5em;
     .aboutHeroTitle {
       width: 100%;
       text-align: center;
-      h1 {
+      color: var(--white);
+      h2 {
         font-size: clamp(var(--fontBig), 10vw, var(--fontSuperBig));
-        font-weight: 800;
+        font-weight: 600;
       }
     }
 
@@ -26,18 +32,28 @@
       flex-direction: row;
       align-items: center;
       padding: 5em 2em;
-      background: url("../public/assets/images/heroBg.png") center center
-        no-repeat;
-      background-size: cover;
+    }
+  }
 
-      .aboutHeroTitle {
-        width: 40%;
-        text-align: start;
+  .whoWeAre {
+    padding: 5em 2em;
 
-        // h1 {
-        //   font-size: 4rem;
-        // }
+    .whoTitle {
+      text-align: center;
+    }
+  }
+
+  .vision {
+    text-align: center;
+    li {
+      margin: 1em 0;
+      .checkMark {
+        margin-right: 0.5em;
       }
+    }
+
+    @media screen and (min-width: 900px) {
+      text-align: start;
     }
   }
 }
