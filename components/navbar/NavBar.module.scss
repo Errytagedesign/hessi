@@ -31,7 +31,7 @@
       transition: all 0.5s ease-in-out;
       margin-right: 20px;
       padding: 1em 0;
-      position: relative;
+      // position: relative;
 
       .dropDown {
         display: none;
@@ -41,7 +41,7 @@
         padding: 0.3em;
         font-size: var(--fontSmall);
         font-weight: 500;
-        padding: 0 0.7em;
+        padding: 1em 0.7em;
 
         &:hover {
           .carets {
@@ -52,11 +52,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            color: var(--mainColor);
+            color: var(--secColor);
             padding: 1em 0.7em;
             border-radius: 15px;
-            position: absolute;
-            background: var(--accentColor);
+            // position: absolute;
+            background: var(--mainColor);
             backdrop-filter: blur(5px) brightness(0.9);
             -webkit-backdrop-filter: blur(5px) brightness(0.9);
 
@@ -80,6 +80,32 @@
         cursor: pointer;
         transition: all 0.5s ease-in-out;
         margin-right: 20px;
+        li {
+          padding: 0 0.7em;
+          &:hover {
+            .dropDown {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              color: var(--mainColor);
+              padding: 1em 0.7em;
+              border-radius: 15px;
+              position: absolute;
+              background: var(--accentColor);
+              backdrop-filter: blur(5px) brightness(0.9);
+              -webkit-backdrop-filter: blur(5px) brightness(0.9);
+
+              li {
+                padding: 0.5em;
+                font-weight: 400;
+                font-size: 1rem;
+                &:hover {
+                  background: var(--white);
+                }
+              }
+            }
+          }
+        }
       }
     }
 
