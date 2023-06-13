@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./About.module.scss";
 import { FaCheckCircle } from "react-icons/fa";
-import Herosection from "./herosection";
+import Herosection from "./Herosection";
 
 function About() {
   return (
