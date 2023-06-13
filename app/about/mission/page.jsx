@@ -1,5 +1,5 @@
 import React from "react";
-import Herosection from "../herosection";
+import Herosection from "../Herosection";
 import styles from "../About.module.scss";
 
 function Mission() {

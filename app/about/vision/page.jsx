@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import Herosection from "../herosection";
+import Herosection from "../Herosection";
 import styles from "../About.module.scss";
 
 function Vision() {
