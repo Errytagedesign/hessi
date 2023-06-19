@@ -1,9 +1,9 @@
-import NavBar from "@/components/navbar/NavBar";
+// import NavBar from "@/components/navbar/NavBar";
 import AOSAnimation from "@/utils/AosInit";
 import "./globals.css";
 
 import localFont from "next/font/local";
-import Footer from "@/components/footer/Footer";
+// import Footer from "@/components/footer/Footer";
 
 const sora = localFont({
   src: [
@@ -60,9 +60,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={sora.className}>
-        <NavBar />
+        {/* <NavBar /> */}
         <AOSAnimation>{children}</AOSAnimation>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
