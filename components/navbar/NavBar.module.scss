@@ -1,7 +1,6 @@
 .navContainer {
   // margin: 0.9em auto;
-  background: var(--white);
-  // background: var(--white);
+  background: var(--pryColor);
   position: relative;
 
   @media screen and (max-width: 600px) {
@@ -11,7 +10,7 @@
   }
 
   nav {
-    padding: 0.8em 0;
+    // padding: 0.8em 0;
     @media screen and (max-width: 600px) {
       width: 90%;
     }
@@ -30,7 +29,7 @@
       cursor: pointer;
       transition: all 0.5s ease-in-out;
       margin-right: 20px;
-      padding: 1em 0;
+      // padding: 1em 0;
       // position: relative;
 
       .dropDown {
@@ -73,7 +72,7 @@
       }
 
       @media screen and (min-width: 900px) {
-        color: var(--mainColor);
+        color: var(--pryColor);
         font-size: 20px;
         font-weight: 500;
         position: relative;

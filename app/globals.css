@@ -1,6 +1,7 @@
 :root {
   --max-width: 1500px;
   --mainColor: #014dd5;
+  --pryColor: #ff9900;
   --secColor: #1d99de;
   --accentColor: #1d99de0d;
   --black: #1e1e1e;
@@ -23,7 +24,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--black);
-  font-family: "Sora", sans-serif;
+  font-family: 'Sora', sans-serif;
 }
 
 a {
@@ -74,7 +75,7 @@ button {
 }
 
 .main-btn {
-  background: var(--mainColor);
+  background: var(--pryColor);
   padding: 0.8em 1.1em;
   font-weight: 500;
   border-radius: 10px;
@@ -82,7 +83,7 @@ button {
 }
 
 .btnOutline {
-  border: solid 1px var(--mainColor);
+  border: solid 1px var(--pryColor);
   color: var(--black);
   padding: 0.7em 1em;
   font-weight: 500;
@@ -147,4 +148,16 @@ img {
     left: 85%;
     top: 120%;
   }
+}
+
+.isActive {
+  border-bottom: solid 3px;
+  border-color: var(--mainColor);
+  padding: 1em !important;
+  color: var(--white);
+  background: color-mix(in sRGB, transparent 80%, var(--mainColor) 20%);
+}
+.notActive {
+  color: var(--white);
+  padding: 1em !important;
 }
